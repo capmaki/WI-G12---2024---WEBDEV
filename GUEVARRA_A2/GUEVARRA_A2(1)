@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marlea Guevarra" />
+    <meta name="description" content="Stardew Valley" />
+    <meta
+      name="keywords"
+      content="Stardew Valley, ConcernedApe, Indie Game, SDV, Farm"
+    />
+    <title>Stardew Valley Wiki</title>
+    <link rel="icon" href="ICON.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="sdv.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="page_container">
+        <aside class="sidebar_container">
+          <img src="sdvlogo.png" alt="stardew logo" />
+          <div class="side_panel">
+            <ul>
+              <li>
+                <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >Main page</a
+                >
+              </li>
+              <li>
+                <a href="https://stardewvalleywiki.com/Special:RecentChanges"
+                  >Recent changes</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://stardewvalleywiki.com/Stardew_Valley_Wiki:Admin_noticeboard"
+                  >Admin noticeboard</a
+                >
+              </li>
+              <li>
+                <a href="https://stardewvalleywiki.com/Help:Editing"
+                  >Help editing</a
+                >
+              </li>
+              <li>
+                <a href="https://stardewvalleywiki.com/Special:Random"
+                  >Random page</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li><h3>Official Links</h3></li>
+              <li>
+                <a href="https://stardewvalley.net/">Official Site</a>
+              </li>
+              <li>
+                <a href="https://forums.stardewvalley.net/">Official Forums</a>
+              </li>
+              <li>
+                <a href="https://www.stardewvalley.net/shop/"
+                  >Official Merchandise</a
+                >
+              </li>
+              <li>
+                <a href="https://discord.com/invite/stardewvalley">Discord</a>
+              </li>
+              <li>
+                <a href="https://www.reddit.com/r/StardewValley">Reddit</a>
+              </li>
+            </ul>
+            <ul>
+              <li><h3>Tools</h3></li>
+              <li>
+                <a
+                  href="https://stardewvalleywiki.com/Special:WhatLinksHere/Stardew_Valley_Wiki"
+                  >What links here</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://stardewvalleywiki.com/Special:RecentChangesLinked/Stardew_Valley_Wiki"
+                  >Related changes</a
+                >
+              </li>
+              <li>
+                <a href="https://stardewvalleywiki.com/Special:Upload"
+                  >Upload file</a
+                >
+              </li>
+              <li>
+                <a href="https://stardewvalleywiki.com/Special:SpecialPages"
+                  >Special pages</a
+                >
+              </li>
+              <li>
+                <a href="javascript:print();">Printable pages</a>
+              </li>
+              <li>
+                <a
+                  href="https://stardewvalleywiki.com/mediawiki/index.php?title=Stardew_Valley_Wiki&oldid=170739"
+                  >Permanent link</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://stardewvalleywiki.com/mediawiki/index.php?title=Stardew_Valley_Wiki&action=info"
+                  >Page information</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://stardewvalleywiki.com/mediawiki/index.php?title=Stardew_Valley_Wiki&action=pagevalues"
+                  >Page values</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li><h3>In other languages</h3></li>
+              <li>
+                <a href="https://de.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >Deutsch</a
+                >
+              </li>
+              <li>
+                <a href="https://es.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >Español</a
+                >
+              </li>
+              <li>
+                <a href="https://fr.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >Français</a
+                >
+              </li>
+              <li>
+                <a href="https://it.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >Italiano</a
+                >
+              </li>
+              <li>
+                <a href="https://ja.stardewvalleywiki.com/Stardew_Valley_Wiki">
+                  日本語</a
+                >
+              </li>
+              <li>
+                <a href="https://ko.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >한국어</a
+                >
+              </li>
+              <li>
+                <a href="https://hu.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >Magyar</a
+                >
+              </li>
+              <li>
+                <a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >Português</a
+                >
+              </li>
+              <li>
+                <a href="https://ru.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >Pусский</a
+                >
+              </li>
+              <li>
+                <a href="https://tr.stardewvalleywiki.com/Stardew_Valley_Wiki">
+                  Türkçe</a
+                >
+              </li>
+              <li>
+                <a href="https://zh.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                  >中文</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <div class="main_container">
+          <header>
+            <div id="top">
+              <nav id="top_nav">
+                <div class="personal">
+                  <a
+                    href="https://stardewvalleywiki.com/mediawiki/index.php?title=Special:CreateAccount&returnto=Stardew+Valley+Wiki"
+                    class="action-link"
+                    >Create account</a
+                  >
+                  <a
+                    href="https://stardewvalleywiki.com/mediawiki/index.php?title=Special:UserLogin&returnto=Stardew+Valley+Wiki"
+                    class="action-link"
+                    >Log in</a
+                  >
+                </div>
+              </nav>
+              <nav id="bot_nav">
+                <div class="left-menu">
+                  <div class="menu">
+                    <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki"
+                      >Main Page</a
+                    >
+                  </div>
+                  <div class="menu">
+                    <a
+                      href="https://stardewvalleywiki.com/Talk:Stardew_Valley_Wiki"
+                      >Discussion</a
+                    >
+                  </div>
+                </div>
+                <div class="right-menu">
+                  <div class="menu">
+                    <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki"
+                      >Read</a
+                    >
+                  </div>
+                  <div class="menu">
+                    <a
+                      href="https://stardewvalleywiki.com/mediawiki/index.php?title=Stardew_Valley_Wiki&action=edit"
+                      >View source</a
+                    >
+                  </div>
+                  <div class="menu">
+                    <a
+                      href="https://stardewvalleywiki.com/mediawiki/index.php?title=Stardew_Valley_Wiki&action=history"
+                      >View history</a
+                    >
+                  </div>
+                  <div id="search">
+                    <input
+                      type="text"
+                      placeholder="Search Stardew Valley Wiki"
+                    />
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <section class="center_container">
+            <div class="welcome">
+              <div class="logo-container">
+                <img src="Main_Logo.png" alt="sdv logo" />
+                <span
+                  >Welcome to the official
+                  <a href="https://stardewvalleywiki.com/Stardew_Valley"
+                    >Stardew Valley</a
+                  >
+                  Wiki</span
+                >
+                <p>
+                  We currently have
+                  <a href="https://stardewvalleywiki.com/Special:Statistics"
+                    >2,004 articles</a
+                  >
+                  about the country-life RPG developed by
+                  <a href="https://stardewvalleywiki.com/ConcernedApe"
+                    >ConcernedApe</a
+                  >.
+                </p>
+              </div>
+              <div class="house-container">
+                <img src="Banner_Right.png" alt="sdv house" />
+              </div>
+            </div>
+            <div class="bottom_container">
+              <div class="table_links">
+                <table>
+                  <tr>
+                    <td>
+                      <a href="https://stardewvalley.net/">Official Site</a>
+                    </td>
+                    <td>
+                      <a href="https://forums.stardewvalley.net/"
+                        >Official Forums</a
+                      >
+                    </td>
+                    <td>
+                      <a href="https://www.gog.com/game/stardew_valley"
+                        >GOG Store</a
+                      >
+                    </td>
+                    <td>
+                      <a
+                        href="https://www.humblebundle.com/store/stardew-valley"
+                        >Humble Store</a
+                      >
+                    </td>
+                    <td>
+                      <a href="http://store.steampowered.com/app/413150"
+                        >Steam Store</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="table_pics">
+                <table>
+                  <tr>
+                    <td rowspan="3">
+                      <a href="http://store.steampowered.com/app/413150"
+                        ><img
+                          src="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/platform-steam.png"
+                          alt="steam"
+                      /></a>
+                      <a
+                        href="https://apps.apple.com/app/stardew-valley/id1406710800"
+                        ><img
+                          src="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/platform-ios.png"
+                          alt="apple store"
+                      /></a>
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.chucklefish.stardewvalley"
+                        ><img
+                          src="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/platform-play.png"
+                          alt="play store"
+                      /></a>
+                    </td>
+                    <td rowspan="3">
+                      <a
+                        href="https://www.stardewvalley.net/stardew-valley-1-6-update-is-out-now-on-pc/"
+                        ><img
+                          src="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/mobile_banner_2.png"
+                          alt="banner"
+                      /></a>
+                    </td>
+                    <td rowspan="3">
+                      <a
+                        href="http://www.nintendo.com/games/detail/stardew-valley-switch"
+                        ><img
+                          src="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/platform-switch.png"
+                          alt="nintendo switch"
+                      /></a>
+                      <a
+                        href="https://store.playstation.com/en-us/product/UP2456-CUSA06840_00-STARDEW00000SIEA"
+                        ><img
+                          src="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/platform-ps4.png"
+                          alt="playstation"
+                      /></a>
+                      <a
+                        href="https://www.microsoft.com/en-US/store/p/Stardew-Valley/C3D891Z6TNQM"
+                        ><img
+                          src="https://stardewvalleywiki.com/mediawiki/extensions/StardewValley/images/platform-xbox.png"
+                          alt="xbox"
+                      /></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="updates">
+                <ul>
+                  <li>
+                    Computer:
+                    <a href="https://stardewvalleywiki.com/Version_History"
+                      >1.6 (Updated March 19, 2024)</a
+                    >
+                  </li>
+                  <li>
+                    PS4 version:
+                    <a
+                      href="https://stardewvalleywiki.com/Console_Version_History#PlayStation_4"
+                      >1.5.4.2 (Updated April 30, 2021)</a
+                    >
+                  </li>
+                  <li>
+                    Xbox One version:
+                    <a
+                      href="https://stardewvalleywiki.com/Console_Version_History#Xbox_One"
+                      >1.5.4.1 (Updated February 15, 2021)</a
+                    >
+                  </li>
+                  <li>
+                    Switch version:
+                    <a
+                      href="https://stardewvalleywiki.com/Console_Version_History#Switch"
+                      >1.5.4.2 (Updated June 18, 2021)</a
+                    >
+                  </li>
+                  <li>
+                    PS Vita version:
+                    <a
+                      href="https://stardewvalleywiki.com/Console_Version_History#PS_Vita"
+                      >1.02 (Updated June 20, 2018)</a
+                    >
+                  </li>
+                  <li>
+                    iOS version:
+                    <a
+                      href="https://stardewvalleywiki.com/Mobile_Version_History#iOS"
+                      >1.5.6.39 (Updated February 20, 2023)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="langs">
+                <p>
+                  <a href="https://de.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >Deutsch</a
+                  >
+                  • English •
+                  <a href="https://es.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >Español</a
+                  >
+                  •
+                  <a href="https://fr.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >Français</a
+                  >
+                  •
+                  <a href="https://it.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >Italiano</a
+                  >
+                  •
+                  <a href="https://ja.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >日本語</a
+                  >
+                  •
+                  <a href="https://ko.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >한국어</a
+                  >
+                  •
+                  <a href="https://hu.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >Magyar</a
+                  >
+                  •
+                  <a href="https://pt.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >Português</a
+                  >
+                  •
+                  <a href="https://ru.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >Русский</a
+                  >
+                  •
+                  <a href="https://tr.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >Türkçe</a
+                  >
+                  •
+                  <a href="https://zh.stardewvalleywiki.com/Stardew_Valley_Wiki"
+                    >中文</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

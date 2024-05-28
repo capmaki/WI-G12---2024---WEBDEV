@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 4 - Calculator</title>
+    <link rel="icon" href="image-removebg-preview.ico" type="image/x-icon" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #a2e0e4;
+        flex-direction: column;
+        margin-bottom: 5%;
+      }
+      .title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #5b8974;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        margin-top: 5%;
+        margin-bottom: 20px;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+      }
+      .calculator {
+        background-color: #5b8974;
+        border-radius: 50px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+        padding: 35px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"] {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      button,
+      input[type="button"] {
+        background-color: #dddddd;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 22px;
+        margin-bottom: 15px;
+        border: 4px solid #851f1f;
+        border-radius: 10px;
+        width: 100%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover,
+      input[type="button"]:hover {
+        background-color: #324fac;
+      }
+      button:active,
+      input[type="button"]:active {
+        background-color: #14bbc7;
+      }
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1px;
+      }
+      input[type="button"].wide {
+        grid-column: span 1;
+      }
+      input[type="button"].tall {
+        grid-row: span 4;
+      }
+      input[type="button"].operator {
+        background-color: #f57f17;
+        color: #ffffff;
+      }
+      input[type="button"].operator:hover {
+        background-color: #26d276;
+      }
+      input[type="button"].operator:active {
+        background-color: #14bbc7;
+      }
+      input[type="submit"]:hover {
+        background-color: #324fac;
+      }
+      input[type="submit"]:active {
+        background-color: #14bbc7;
+      }
+      .history {
+        width: 100%;
+        background-color: #ffffff;
+        border: 6px solid #cccccc;
+        border-radius: 5px;
+        padding: 10px;
+        max-height: 100px;
+        overflow-y: auto;
+        margin-top: 10px;
+      }
+      .history-item {
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+      .history-item:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">CALCULATOR</div>
+    <div class="calculator">
+      <form name="calc">
+        <input type="text" name="disp" readonly />
+        <button type="button" id="acButton" onclick="clearDisplay()">AC</button>
+        <div class="buttons">
+          <input type="button" value="7" onclick="addToDisplay('7')" />
+          <input type="button" value="8" onclick="addToDisplay('8')" />
+          <input type="button" value="9" onclick="addToDisplay('9')" />
+          <input
+            type="button"
+            value="/"
+            class="operator"
+            onclick="addToDisplay('/')"
+          />
+          <input type="button" value="4" onclick="addToDisplay('4')" />
+          <input type="button" value="5" onclick="addToDisplay('5')" />
+          <input type="button" value="6" onclick="addToDisplay('6')" />
+          <input
+            type="button"
+            value="*"
+            class="operator"
+            onclick="addToDisplay('*')"
+          />
+          <input type="button" value="1" onclick="addToDisplay('1')" />
+          <input type="button" value="2" onclick="addToDisplay('2')" />
+          <input type="button" value="3" onclick="addToDisplay('3')" />
+          <input
+            type="button"
+            value="-"
+            class="operator"
+            onclick="addToDisplay('-')"
+          />
+          <input
+            type="button"
+            value="0"
+            class="wide"
+            onclick="addToDisplay('0')"
+          />
+          <input type="button" value="." onclick="addToDisplay('.')" />
+          <input
+            type="button"
+            value="+"
+            class="operator"
+            onclick="addToDisplay('+')"
+          />
+          <input
+            type="button"
+            value="="
+            id="equalButton"
+            class="tall"
+            onclick="calculate()"
+          />
+        </div>
+      </form>
+      <div class="history" id="history"></div>
+    </div>
+    <script>
+      function clearDisplay() {
+        document.calc.disp.value = "";
+      }
+
+      function addToDisplay(value) {
+        document.calc.disp.value += value;
+      }
+
+      function calculate() {
+        try {
+          var expression = document.calc.disp.value;
+          expression = expression.replace(/%/g, "/100*");
+          var result = eval(expression);
+          document.calc.disp.value = result.toFixed(5);
+          addToHistory(expression + " = " + result.toFixed(5));
+        } catch (err) {
+          document.calc.disp.value = "Error";
+        }
+      }
+
+      function addToHistory(item) {
+        var history = document.getElementById("history");
+        var historyItem = document.createElement("div");
+        historyItem.textContent = item;
+        historyItem.className = "history-item";
+        historyItem.onclick = function () {
+          document.calc.disp.value = item.split(" = ")[0];
+        };
+        history.appendChild(historyItem);
+      }
+
+      function highlightButton(value) {
+        const buttons = document.querySelectorAll(
+          '.buttons input[type="button"]'
+        );
+        buttons.forEach((button) => {
+          if (button.value === value) {
+            button.style.backgroundColor = "#ffcc00";
+            setTimeout(() => {
+              button.style.backgroundColor = button.classList.contains(
+                "operator"
+              )
+                ? "#f57f17"
+                : "#dddddd";
+            }, 300);
+          }
+        });
+      }
+
+      function highlightSpecialButton(buttonId) {
+        const button = document.getElementById(buttonId);
+        button.style.backgroundColor = "#ffcc00";
+        setTimeout(() => {
+          button.style.backgroundColor = "#dddddd";
+        }, 300);
+      }
+
+      document.addEventListener("keydown", function (event) {
+        const key = event.key;
+        const operators = ["+", "-", "*", "/"];
+        if (!isNaN(key) || operators.includes(key) || key === ".") {
+          addToDisplay(key);
+          highlightButton(key);
+        } else if (key === "Enter") {
+          event.preventDefault(); // Prevent form submission
+          calculate();
+          highlightSpecialButton("equalButton");
+        } else if (key === "Backspace") {
+          document.calc.disp.value = document.calc.disp.value.slice(0, -1);
+        } else if (key.toLowerCase() === "c") {
+          clearDisplay();
+          highlightSpecialButton("acButton");
+        }
+      });
+    </script>
+  </body>
+</html>

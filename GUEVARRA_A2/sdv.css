@@ -1,0 +1,364 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-image: url(stardewbackground.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.page_container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar_container {
+  width: 180px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.side_panel {
+  border: 6px solid transparent;
+  border-image: url(menu_border.png) 15 stretch;
+  background-color: #d1f8ffaa;
+  padding: 35px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  left: -12px;
+}
+
+.side_panel ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side_panel ul li {
+  color: #0b0080;
+  font-size: 12px;
+}
+
+.side_panel ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.side_panel ul li h3 {
+  text-decoration: none;
+  font-size: 12px;
+  color: #54595d;
+}
+
+.main_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+#top {
+  position: relative;
+  z-index: 2;
+  margin-top: -20px;
+}
+
+.personal a.action-link {
+  color: #99bfff;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.menu a {
+  color: #b7d2ff;
+  font-size: 13px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#top_nav,
+#bot_nav {
+  position: relative;
+}
+
+.personal,
+.menu {
+  display: inline-block;
+  padding: 1px;
+  cursor: pointer;
+}
+
+#top_nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+#bot_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.left-menu,
+.right-menu {
+  display: flex;
+  align-items: center;
+  color: #b7d2ff;
+}
+
+.menu {
+  margin: 10px;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#search input[type="text"] {
+  padding: 5px 30px 5px 10px;
+  border: 1px solid #ffffff80;
+  border-radius: 4px;
+  margin-right: 5px;
+  background-color: #ffffff80;
+}
+
+#search button {
+  padding: 5px 20px;
+  border: 1px solid #ffffff80;
+  border-radius: 0;
+  background-color: #ffffff80;
+  color: #333;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.personal {
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  #bot_nav {
+    flex-direction: column;
+  }
+}
+
+.center_container {
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #d1f8ffaa;
+  margin: 5px;
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-container a:hover {
+  text-decoration: underline;
+}
+
+.logo-container a:active {
+  color: #faa700;
+}
+
+.logo-container a {
+  text-decoration: none;
+  color: #0645ad;
+  background: none;
+}
+
+.logo-container span {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 5%;
+  margin-bottom: 5px;
+}
+
+.logo-container p {
+  color: #202122;
+  margin-bottom: 0;
+}
+
+.house-container {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.table_links,
+.table_pics,
+.updates,
+.langs {
+  background-color: #ffffff94;
+  padding: 10px;
+}
+
+.table_links {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 545px;
+  height: 58.38px;
+  background-color: #ffffff94;
+  font-size: 17px;
+  color: #202122;
+  padding: 0px 30px 0px 0px;
+}
+
+.table_links td {
+  width: 117.28px;
+  height: 24.39px;
+  text-align: center;
+}
+
+.table_links a {
+  display: block;
+  margin: 5px auto;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.table_links a[href="https://stardewvalley.net/"]
+{
+  width: 83.55px;
+  height: 16px;
+}
+
+.table_links a[href="https://forums.stardewvalley.net/"]
+{
+  width: 106.88px;
+  height: 16px;
+}
+
+.table_links a[href="https://www.gog.com/game/stardew_valley"]
+{
+  width: 83.03px;
+  height: 16px;
+}
+
+.table_links a[href="https://www.humblebundle.com/store/stardew-valley"]
+{
+  width: 98.59px;
+  height: 16px;
+}
+
+.table_links a[href="http://store.steampowered.com/app/413150"]
+{
+  width: 90.83px;
+  height: 16px;
+}
+
+.table_pics {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 545px;
+  height: 203.59px;
+  background-color: #ffffff94;
+  font-size: 20px;
+  color: #202122;
+  margin-top: -30%;
+}
+
+.table_pics td:nth-child(1) img {
+  width: 103.88px;
+  height: 60px;
+}
+
+.table_pics td:nth-child(2) img {
+  width: 315.64px;
+  height: 190px;
+}
+
+.table_pics td:nth-child(3) img {
+  width: 103.88px;
+  height: 60px;
+}
+
+.updates a {
+  color: #0645ad;
+  font-weight: bold;
+}
+
+.updates {
+  font-size: 17px;
+  color: #202122;
+  text-align: center;
+  width: 505px;
+  height: 200px;
+  background-color: #ffffff94;
+  padding: 10px;
+}
+
+.updates ul {
+  list-style-type: none;
+}
+
+.updates a {
+  color: #0645ad;
+}
+
+.langs {
+  font-size: 12px;
+  color: #202122;
+  text-align: center;
+  width: 515px;
+  height: 38.38px;
+  background-color: #ffffff94;
+  padding: 10px;
+}
+
+.langs p {
+  margin: 0;
+}

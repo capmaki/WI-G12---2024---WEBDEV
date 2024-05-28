@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="icon" href="id.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#references">References</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">Toggle Theme</button>
+      </nav>
+      <h1>MARLEA GUEVARRA</h1>
+      <div id="contact-info">
+        <p>Email: <span id="email">example@gmail.com</span></p>
+        <p>Phone: <span id="phone">1234567890</span></p>
+        <p>
+          Address:
+          <span id="address">Quezon City, Metro Manila</span>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="education">
+        <h2>EDUCATION</h2>
+        <div class="education-item">
+          <h3>Far Eastern University</h3>
+          <p>High School (August 2022 - Present)</p>
+          <p>STEM (Science, Technology, Engineering, and Mathematics)</p>
+          <p>With High Honors - Grade 11 (2022 - 2023)</p>
+          <p>With Honors - 1st Semester (2023 - 2024)</p>
+        </div>
+        <div class="education-item">
+          <h3>Quezon City Academy Foundation Inc.</h3>
+          <p>June 2018 - July 2022</p>
+          <p>Alvendia Scholar</p>
+          <p>With Honors (Grade 7 - Grade 10)</p>
+        </div>
+        <div class="education-item">
+          <h3>Bresee Nazarene School</h3>
+          <p>June 2012 - March 2018</p>
+          <p>Consistent Top 10 (Grade 1 - Grade 6)</p>
+          <p>Best in English, Best in Computer, Best in Math</p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>RELEVANT EXPERIENCES</h2>
+        <div class="experience-item">
+          <h3>Assistant Director | Bureau for Clean and Green (QCAFI)</h3>
+          <p>2018 – 2019</p>
+          <p>
+            Co-managed the Bureau for Clean and Green, which aims to promote and
+            implement eco-friendly practices and procedures on campus.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Peace Officer | 7 - Agap A (QCAFI)</h3>
+          <p>2018 – 2019</p>
+          <p>
+            Facilitated peace and discipline inside the classroom and around the
+            campus during events.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Student Teacher | PABINHIAN (QCAFI)</h3>
+          <p>2018 – 2020</p>
+          <p>
+            Assigned to teach class remedial on Mathematics for Grade 7 students
+            and to teach TLE for Grade 8 students. Won Best Student Teacher for
+            TLE.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Auditor | 8 - Ageo B (QCAFI)</h3>
+          <p>2019 – 2020</p>
+          <p>
+            Managed the funds and transactions in the classroom's accounting
+            records.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Science News Editor | ECHO (QCAFI)</h3>
+          <p>2018 – 2021</p>
+          <p>
+            Wrote articles based on research and reports on news and trends in
+            the field of science.
+          </p>
+        </div>
+        <div class="experience-item">
+          <h3>Work Immersion | FEU TECH</h3>
+          <p>2024</p>
+          <p>
+            Gained experiences on cybersecurity and earned two certifications,
+            and also learned basics to web developing.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>SKILLS</h2>
+        <div class="skills-category">
+          <h3>Hard Skills</h3>
+          <ul>
+            <li>
+              Writing articles (news reports, feature articles, sports news,
+              science news, editorial articles, etc.)
+            </li>
+            <li>Writing narrative and creative works</li>
+            <li>Copywriting and editing articles</li>
+            <li>Fluency in Microsoft Office Suite and Google Drive Suite</li>
+            <li>Web Development using HTML and CSS</li>
+            <li>Coding projects with Python</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Able to adapt in any situation</li>
+            <li>Communicates effectively</li>
+            <li>Persuasive and convincing</li>
+            <li>Manages time well</li>
+            <li>Organized with tasks and projects</li>
+            <li>Great team-player</li>
+            <li>Detail-oriented</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="references">
+        <h2>CHARACTER REFERENCE</h2>
+        <div class="reference-item">
+          <p>Vic V. Magara</p>
+          <p>English Teacher and ECHO Adviser, QCAFI</p>
+          <p>Email: <span id="ref-email">vmagara@gmail.com</span></p>
+          <p>Phone: <span id="ref-phone">0978654321</span></p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="contact-email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Marlea A. Guevarra. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
